@@ -1,5 +1,10 @@
 # pc-games-deals
 
+## DEMO LINK 
+```
+https://deals.ownaradio.com
+```
+
 ## Project setup
 ```
 yarn install

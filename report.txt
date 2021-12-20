@@ -1,0 +1,53 @@
+Technical Assignment: PC Games Deals Using Vue 
+
+Application Source code
+https://github.com/terewere/pc-games-deals
+
+Demo Link
+https://deals.ownaradio.com
+
+Assumption
+•	From the Figma mock up, I assume the web application should be responsive.
+•	studying the Cheap Shark API, I assume the list of deals needs to be paginated.
+•	I assume looking at the search feature that a form of debouncing should be implement to prevent API request after every keystroke. 
+•	I also assume since making a REST API request is done asynchronously, it’s better to show the user a progress bar.
+•	Most importantly I assume I can ask for clarification in case some things are not clear to me.
+
+
+TO RUN THE APPLICATION
+
+Clone the app from github.com
+git clone git@github.com:terewere/pc-games-deals.git
+
+Install dependencies
+yarn install
+Compiles and hot-reloads for development
+yarn serve
+
+Compiles and minifies for production
+yarn build
+Run your unit tests
+yarn test:unit
+
+
+Challenges
+I encountered an obstacle when implementing the infinite scrolling. The scrolling feature works but with a bug which causes a request to be made to the server continuously till you hit the server rate limit. Because I was running out of time I decided to implement ‘load more’ button instead since infinite scrolling was not a requirement.
+
+I also faced some challenges using ‘Vanilla CSS’ which I chose for this project. I use bootstrap CSS and materialize CSS for all my projects.
+
+
+Resources
+•	Nginx Server on Digital Ocean
+•	Let’s Encrypt (SSL certificate)
+•	Github actions (pushing from local to server)
+•	Typescript
+•	Vue
+•	Vue router
+•	Vue test Utils
+
+
+I spent about a week working on this assignment. This assignment coincided with a project I was working on so I had to find a way to work on it without affecting the outcome of the project. 
+
+If I have more time, I will improve upon the User Experience (UX) of the app like fixing the infinite scrolling bug. Also, I will add ‘No result’ when a user’s search cannot be found.
+
+
