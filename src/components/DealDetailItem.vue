@@ -59,13 +59,23 @@ export default defineComponent({
 
 .price {
   margin-bottom: 8px;
-  display: flex;
 }
 
 .savings {
+  font-style: italic;
+  font-weight: 100;
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+ .savings {
   margin-left: auto;
   font-style: italic;
   font-weight: 100;
-  padding-right: 7rem;
+}
+
+.price {
+  display: flex;
+}
 }
 </style>

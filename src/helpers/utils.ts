@@ -1,6 +1,5 @@
 import Deal from "@/models/Deal";
 import router from "@/router";
-import Api from "./api";
 import { getBystoreID } from '@/store/stores'
 
 
