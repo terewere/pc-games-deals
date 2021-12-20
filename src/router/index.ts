@@ -1,20 +1,59 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/Home.vue'
+
+const NotFound = () =>
+  import( /* webpackChunkName: "notfound" */ '@/components/NotFound.vue');
+
+const Deals = () =>
+  import( /* webpackChunkName: "deals" */ '@/views/deals/Deals.vue');
+
+const DealDetail = () =>
+  import( /* webpackChunkName: "deal-detail" */ '@/views/deals/DealDetail.vue');
+
+const Stores = () =>
+  import( /* webpackChunkName: "stores" */ '@/views/stores/Stores.vue');
+
+const Games = () =>
+  import( /* webpackChunkName: "games" */ '@/views/games/Games.vue');
+
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: '/deals',
+  },
+
+  {
+    path: '/deals',
+    name: 'Deals',
+    component: Deals,
+
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/stores',
+    name: 'store',
+    component: Stores
+  },
+
+  {
+    path: '/games',
+    name: 'games',
+    component: Games
+  },
+
+  {
+    path: '/deals/:dealID',
+    name: 'deal.show',
+    props: true,
+    component: DealDetail
+  },
+
+  {
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: NotFound,
+
   }
+
 ]
 
 const router = createRouter({
