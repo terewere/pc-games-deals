@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["notfound"],{be4d:function(n,t,e){"use strict";e.r(t);var o=e("7a23"),u=Object(o["g"])("h1",null,"404 Not Found",-1),c=[u];function d(n,t){return Object(o["v"])(),Object(o["f"])("div",null,c)}var r=e("6b0d"),b=e.n(r);const a={},i=b()(a,[["render",d]]);t["default"]=i}}]);
+//# sourceMappingURL=notfound.a1ccc999.js.map
