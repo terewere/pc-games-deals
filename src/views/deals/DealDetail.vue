@@ -6,12 +6,14 @@
     <div class="detail-img" v-if="state === State.loading">
       <deal-detail-item-shimmer></deal-detail-item-shimmer>
     </div>
-    <div>
+    <div v-if="state === State.loaded">
       <h2 class="others">Other deals for this game</h2>
       <div v-for="deal in relatedDeals" :key="deal.dealID">
         <related-deal :deal="deal"></related-deal>
       </div>
     </div>
+    
+
   </div>
 </template>
 

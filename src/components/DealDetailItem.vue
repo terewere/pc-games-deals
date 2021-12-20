@@ -22,7 +22,7 @@ import { defineComponent, ref } from "vue";
 export default defineComponent({
   props: {
     datum: {
-      type: Deal,
+      type: Object,
     },
   },
   setup(props) {

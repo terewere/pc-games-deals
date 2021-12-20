@@ -33,5 +33,24 @@ export default defineComponent({
 });
 </script>
 <style lang="scss" scoped>
+.normal-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0px;
+}
 
+.sale-price {
+  color: #14a38b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+
+.price {
+  margin-bottom: 8px;
+}
 </style>

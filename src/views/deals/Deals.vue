@@ -99,7 +99,7 @@ export default defineComponent({
 
    fetchDeals(url);
 
-   console.log(url);
+   //console.log(url);
    
 
     };
