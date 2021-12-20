@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.3ba46809d375a0bc3d2f3896d84bccf4.js"
+  "/precache-manifest.86a53ce5824f0b09cb8c1afc91393428.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "pc-games-deals"});
