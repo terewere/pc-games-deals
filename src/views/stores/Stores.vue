@@ -9,7 +9,6 @@
   </div>
 </template>
 
-
 <style lang="scss" scoped>
 .title {
   color: #000;

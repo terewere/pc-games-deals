@@ -37,3 +37,5 @@ jobs:
           PORT: 22
           script: |
             cd /var/www/deals
+
+            
